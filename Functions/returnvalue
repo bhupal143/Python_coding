@@ -1,0 +1,23 @@
+import random
+def getanswer(number):
+    if number == 1:
+        return 'It is certain'
+    elif number == 2:
+        return 'It is decidely so'
+    elif number == 3:
+        return 'Yes'
+    elif number == 4:
+        return 'Reply hazy and try again'
+    elif number == 5:
+        return 'Ask again later'
+    elif number == 6:
+        return 'concentrate and ask again later'
+    elif number == 7:
+        return 'My reply is No'
+    elif number == 8:
+        return 'Outlook is not good'
+    elif number == 9:
+        return 'very doubtfull'
+r = random.randint(1, 9)
+fortune = getanswer(r)
+print(fortune)
